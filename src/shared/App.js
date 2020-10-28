@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import {Route, Switch} from 'react-router-dom'
 
-const Home = React.lazy(()=>import('../components/Pages/Home'));
 const Logo = React.lazy(()=> import('../components/Pages/Logo'));
 const Login = React.lazy(()=>import('../components/Pages/Login'));
 const Join = React.lazy(()=>import('../components/Pages/Join'));

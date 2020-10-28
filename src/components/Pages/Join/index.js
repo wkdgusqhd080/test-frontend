@@ -5,7 +5,7 @@ import OnePageTheme from '../../templates/OnePageTheme'
 import CustomInput from '../../Modules/CustomInput'
 import CustomBtn from '../../Modules/CustomBtn'
 import CustomText from '../../Modules/CustomText'
-import Axios from 'axios';
+import axios from 'axios';
 
 class Join extends React.Component {
 
@@ -19,50 +19,56 @@ class Join extends React.Component {
                 nick: "",
                 phone: "",
             },
-            color: "gray full"
-            
+            color: "grayfull"
         })
-        
     }
 
-    handleSubmit = ()=> {
-        /*
-        Axios.get('http://localhost:3002/api').then((Response)=>{
-            console.clear();
-            console.log(Response.data);
-        }).catch((Error)=>{
-            console.log(Error);
-        })
-        */
-       console.log("joinInfo: ", this.state.joinInfo)
 
-        if(this.state.joinInfo.email != '' && this.state.joinInfo.pwd != '' && this.state.joinInfo.nick != '' && this.state.joinInfo.phone != '') {
-            Axios({
-            
+    handleSubmit = async ()=> {
+        let flag = false;
+        
+        let email = this.state.joinInfo.email;
+        let pwd = this.state.joinInfo.pwd;
+        let nick = this.state.joinInfo.nick;
+        let phone = this.state.joinInfo.phone;
+
+        if(email != '' || pwd != '' || nick != '' || phone != '') {
+            await axios({
                 method: 'post',
-                url: 'http://localhost:3002/foo',
-                data: this.state.joinInfo
-            })
+                url: 'http://localhost:3002/join',
+                data: { joinInfo: this.state.joinInfo } 
+                }) 
+                .then(response => {
+                        if(response.data.code == '200') {
+                            alert(response.data.message);
+                            flag = true;
+                        }else {
+                            alert(response.data.message);
+                            return false;
+                        }
+                })
+                .catch(error => {
     
-            alert("가입ok");
+                });
+            if(flag) {
+                this.props.history.push("/login");
+            }
         }else {
-            alert('정보를 입력하세요.');
+           alert("정보를 입력해주세요.");
         }
     }
+
     /*
     setColor = ()=> {
         this.setState({
-            color: "blue full"
+            color: "bluefull"
         });
     }
     */
 
     setJoinInfo = (obj) => this.setState({joinInfo : obj})
 
-    componentDidUpdate = () => {
-        //console.log("joinInfo: ", this.state.joinInfo)
-    }
-
+    componentDidUpdate = () => {/*console.log("joinInfo: ", this.state.joinInfo)*/}
 
     render() {
         const {color} = this.state
@@ -103,7 +109,7 @@ class Join extends React.Component {
                     style="pwd"
                 />
                 <CustomInput
-                    type="text"
+                    type="password"
                     placeholder="숫자,영문,특수문자 포함 12자"
                     style="pwd ph joinInput"
                     name="pwd"
@@ -137,20 +143,17 @@ class Join extends React.Component {
                     setJoinInfo={this.setJoinInfo}
                 />
             </div>
-
+            
                 <CustomBtn
                     text="가입완료"
-                    style={color}//"gray full"
+                    style={color}
                     history={this.props.history}
                     handleClick={this.handleSubmit}
                 />
-
             </OnePageTheme>
         )
     }
-
     
-
 }
 
 export default Join

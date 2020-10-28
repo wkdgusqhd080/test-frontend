@@ -14,7 +14,6 @@ const CustomInput = ({type, style, placeholder, name, setJoinInfo, joinInfo}) =>
         let obj = Object.assign({}, joinInfo)
         obj[e.target.name] = e.target.value
         //alert(JSON.stringify(obj))
-        
         setJoinInfo(obj)
 
     }
