@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="373" height="20" viewBox="0 0 373 20">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="패스_1246" d="M346.2-15.5h17.6a3.625 3.625 0 0 1 1.926.334 2.272 2.272 0 0 1 .945.945A3.625 3.625 0 0 1 367-12.3v6.369A1.926 1.926 0 0 1 365.074-4H346.2a3.625 3.625 0 0 1-1.926-.334 2.272 2.272 0 0 1-.945-.945A3.625 3.625 0 0 1 343-7.2v-5.1a3.625 3.625 0 0 1 .334-1.926 2.272 2.272 0 0 1 .945-.945 3.625 3.625 0 0 1 1.921-.329z" class="cls-1"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path id="패스_1245" fill="none" d="M2 0h373v-20H2z"/>
+        </clipPath>
+        <clipPath id="clip-path-3">
+            <path id="패스_1249" d="M368-11.5a2 2 0 0 1 1.5 1.937 2 2 0 0 1-1.5 1.937z" class="cls-1"/>
+        </clipPath>
+        <clipPath id="clip-path-5">
+            <path id="패스_1252" d="M345.5-13.5h19a.5.5 0 0 1 .5.5v6.5a.5.5 0 0 1-.5.5h-19a.5.5 0 0 1-.5-.5V-13a.5.5 0 0 1 .5-.5z" class="cls-1"/>
+        </clipPath>
+        <clipPath id="clip-path-8">
+            <path id="패스_1257" d="M8-9.5a1 1 0 0 1 1 1V-6a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2.5a1 1 0 0 1 1-1zm4.5-1.5a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1zm4.5-2a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1zm4.5-2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1z" class="cls-1"/>
+        </clipPath>
+        <clipPath id="clip-path-10">
+            <path id="패스_1260" d="M71.33-12.17A10.463 10.463 0 0 1 78.5-15a10.463 10.463 0 0 1 7.17 2.83l-1.415 1.415A8.47 8.47 0 0 0 78.5-13a8.47 8.47 0 0 0-5.755 2.245L71.33-12.17zm2.477 2.477A6.974 6.974 0 0 1 78.5-11.5a6.974 6.974 0 0 1 4.693 1.807l-1.416 1.416A4.981 4.981 0 0 0 78.5-9.5a4.981 4.981 0 0 0-3.277 1.223zm2.481 2.481A3.485 3.485 0 0 1 78.5-8a3.485 3.485 0 0 1 2.212.788L78.5-5l-2.212-2.212z" class="cls-1"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:none;clip-rule:evenodd}.cls-4{clip-path:url(#clip-path-2)}.cls-11{fill:#030303;font-size:12px;font-family:Helvetica}
+        </style>
+    </defs>
+    <g id="그룹_1113" transform="translate(-2 20)">
+        <g id="그룹_1099" clip-path="url(#clip-path)">
+            <g id="그룹_1098" class="cls-4">
+                <g id="그룹_1097" transform="translate(343 -15.5)">
+                    <path id="패스_1244" fill="none" stroke="rgba(0,0,0,0.4)" stroke-width="2px" d="M3.2 0h17.6a3.625 3.625 0 0 1 1.926.334 2.272 2.272 0 0 1 .945.945A3.625 3.625 0 0 1 24 3.2v6.374a1.926 1.926 0 0 1-1.926 1.926H3.2a3.625 3.625 0 0 1-1.926-.334 2.272 2.272 0 0 1-.945-.945A3.625 3.625 0 0 1 0 8.3V3.2a3.625 3.625 0 0 1 .334-1.921 2.272 2.272 0 0 1 .945-.945A3.625 3.625 0 0 1 3.2 0z"/>
+                </g>
+            </g>
+        </g>
+        <g id="그룹_1101" clip-path="url(#clip-path-3)">
+            <g id="그룹_1100" class="cls-4">
+                <path id="패스_1247" fill="rgba(0,0,0,0.4)" d="M363-16.5h11.5v13.874H363z"/>
+            </g>
+        </g>
+        <g id="그룹_1103" clip-path="url(#clip-path-5)">
+            <g id="그룹_1102" class="cls-4">
+                <path id="패스_1250" d="M340-18.5h30V-1h-30z"/>
+            </g>
+        </g>
+        <g id="그룹_1108" class="cls-4">
+            <g id="그룹_1104" transform="translate(307 -16.5)">
+                <text id="_100_" fill="#030303" font-family="Helvetica" font-size="12px" letter-spacing="0em" transform="translate(2.309 11)">
+                    <tspan x="0" y="0">100%</tspan>
+                </text>
+            </g>
+            <g id="그룹_1105" transform="translate(298.5 -15)">
+                <path id="패스_1253" fill="none" stroke="#000" d="M0 2l6 5.5L3 10V0l3 2.5L0 8"/>
+            </g>
+            <g id="그룹_1106" transform="translate(163 -16.5)">
+                <text id="_9:41_AM" class="cls-11" transform="translate(2.155 11)">
+                    <tspan x="0" y="0">9:41 AM</tspan>
+                </text>
+            </g>
+            <g id="그룹_1107" transform="translate(26 -16.5)">
+                <text id="Sketch" class="cls-11" transform="translate(0 11)">
+                    <tspan x="0" y="0">Sketch</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="그룹_1110" clip-path="url(#clip-path-8)">
+            <g id="그룹_1109" class="cls-4">
+                <path id="패스_1255" d="M1-20h26.5V0H1z"/>
+            </g>
+        </g>
+        <g id="그룹_1112" clip-path="url(#clip-path-10)">
+            <g id="그룹_1111" class="cls-4">
+                <path id="패스_1258" d="M66.33-20h24.34V0H66.33z"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,195 @@
+
+/*App.js*/
+.logo {
+    margin-top:303.9px;
+    margin-left:102px;
+    margin-right:102px;
+}
+
+/*Login.js*/
+
+.loginForm-logo {
+    margin-top:107px;
+    margin-right:87px;
+    margin-left:87px;
+}
+
+.loginForm-ul1 {list-style:none;}
+
+.loginForm-li1 { margin-top:98px;}
+
+.input {
+    width:290px; 
+    height:40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px; 
+    font-size: 14px; 
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal; 
+    text-align: left;
+}
+
+.input.pwd{
+    margin-top:12px;
+}
+.input.ph::placeholder {
+    color:#c6c6c6; font-size: 14px;
+}
+
+
+.btn {
+    text-decoration:none;
+    border-radius:5px;
+    border:1px solid #226bef;
+    font-family:Noto Sans KR;
+    width:292px;
+    height:42px;
+    font-size: 14px;
+    text-align:center;
+    line-height: 44px;
+    margin-left:40px;
+    margin-bottom: 5px;
+    cursor:pointer;
+}
+.btn.white {
+    color:#226bef;
+    background-color: white;
+}
+
+.btn.blue {
+    color:white;
+	background-color:#226bef;
+}
+
+.btn.gray.full {
+    text-decoration:none;
+    border-radius:5px;
+    border:none;
+    font-family:Noto Sans KR;
+    width:350px;
+    height:42px;
+    font-size: 14px;
+    text-align:center;
+    line-height: 44px;
+    margin-left:-4px;
+    cursor:pointer;
+}
+
+.btn.blue.full {
+    background-color:#226bef;
+    color:white;
+}
+
+.login-form-interval1 {margin-bottom:12px;}
+
+.login-form-li1 {float:left;}
+
+.login-form-ul1 {list-style:none; margin-top:-10px; margin-left:-40px; margin-bottom:95px;}
+
+.logincheck {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-left: 42px;
+  }
+
+  .keep-state {
+    width: 104px;
+    height: 18px;
+    object-fit: contain;
+    font-family: NotoSansCJKkr;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #767676;
+    margin-left: 4px;
+  }
+
+  .use-role {
+      margin-left:52px;
+      margin-top: 33px;
+  }
+
+
+  /*Join.js*/
+
+.joinFormText {
+        width: 80px;
+        height: 20px;
+        object-fit: contain;
+        font-family: NotoSansCJKkr;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000000;
+}
+
+.joinFormText.email {
+    margin-top:10px;
+    margin-bottom:12px;
+    margin-left:13px;
+}
+
+.joinFormText.pwd {
+    margin-top:10px;
+    margin-left:12px;
+}
+
+.joinFormText.nick {
+    margin-top:10px;
+    margin-bottom:12px;
+    margin-left:13px;
+}
+
+.joinFormText.phone {
+    margin-top:10px;
+    margin-bottom:12px;
+    margin-left:13px;
+}
+
+.ul1 {
+	list-style:none;
+}
+.li1 {
+    float:left;
+    margin-left:-37px;
+}
+
+.join-text {
+    margin-left:112px;
+    text-align:center;
+    width: 65px;
+    height: 24px;
+    object-fit: contain;
+    font-family: Noto Sans KR;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #226bef;
+  }
+
+  .inputForm{
+      margin-top:40px;
+  }
+
+  .join-info-input-msg {text-align:center; font-weight:500; font-size:16px; margin-bottom:40px; margin-top:104px; font-weight:bold;}
+
+  .input.joinInput{
+      margin-left:12px;
+      width:320px;
+      height:44px;
+      color:#767676;
+  }
