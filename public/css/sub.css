@@ -85,6 +85,18 @@ body{
 .btn.bluefull {
     background-color:#226bef;
     color:white;
+    text-decoration:none;
+    border-radius:5px;
+    border:none;
+    width:365px;
+    height:42px;
+    font-size: 14px;
+    text-align:center;
+    line-height: 44px;
+    margin-left:-4px;
+    margin-top:160px;
+    font-family:Noto Sans KR;
+    cursor:pointer;
 }
 
 .login-form-interval1 {margin-bottom:12px;}

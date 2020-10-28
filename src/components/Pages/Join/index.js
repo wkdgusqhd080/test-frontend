@@ -19,12 +19,14 @@ class Join extends React.Component {
                 nick: "",
                 phone: "",
             },
-            color: "grayfull"
+            color: "grayfull",
+            complete: false
         })
     }
 
 
     handleSubmit = async ()=> {
+
         let flag = false;
         
         let email = this.state.joinInfo.email;
@@ -56,6 +58,7 @@ class Join extends React.Component {
         }else {
            alert("정보를 입력해주세요.");
         }
+        
     }
 
     /*
@@ -66,14 +69,31 @@ class Join extends React.Component {
     }
     */
 
-    setJoinInfo = (obj) => this.setState({joinInfo : obj})
+    setJoinInfo = (obj) => {
+        this.setState({joinInfo : obj})
 
-    componentDidUpdate = () => {/*console.log("joinInfo: ", this.state.joinInfo)*/}
+        let email = this.state.joinInfo.email;
+        let pwd = this.state.joinInfo.pwd;
+        let nick = this.state.joinInfo.nick;
+        let phone = this.state.joinInfo.phone;
+            if(email != '' && pwd != '' && nick != '' && phone != '') {
+                this.setState({complete : true});
+            }else {
+                this.setState({complete : false});
+            }
+    }
+
+    /*
+    componentDidUpdate = () => {
+ 
+    }
+    */
 
     render() {
         const {color} = this.state
         const {history} = this.props;
         const {joinInfo} = this.state
+        const {complete} = this.state;
 
         return (
             <OnePageTheme
@@ -146,7 +166,7 @@ class Join extends React.Component {
             
                 <CustomBtn
                     text="가입완료"
-                    style={color}
+                    style={complete ? 'bluefull': 'grayfull'}
                     history={this.props.history}
                     handleClick={this.handleSubmit}
                 />
