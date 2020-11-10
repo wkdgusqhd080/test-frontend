@@ -6,6 +6,7 @@ import CustomInput from '../../Modules/CustomInput'
 import CustomBtn from '../../Modules/CustomBtn'
 import CustomText from '../../Modules/CustomText'
 import axios from 'axios';
+import MiniNavi from '../../Modules/MiniNavi'
 
 class Join extends React.Component {
 
@@ -19,7 +20,6 @@ class Join extends React.Component {
                 nick: "",
                 phone: "",
             },
-            color: "grayfull",
             complete: false
         })
     }
@@ -104,10 +104,15 @@ class Join extends React.Component {
                 footer={<div className="footer"></div>}
             >
             
-            <ul className="ul1">
+            {/* <ul className="ul1">
                 <li className="li1"><img src={backBtn} alt="back-btn" onClick={()=> history.push("/login")}/></li>
                 <div class="join-text">회원가입</div>
-            </ul>
+            </ul> */}
+            <MiniNavi
+                menuName='회원가입'
+                history={history}
+                backBtnDisplay='Y'
+            />
 
             <div className="join-info-input-msg">가입정보를 입력해주세요 :)</div>
 
@@ -166,7 +171,7 @@ class Join extends React.Component {
             
                 <CustomBtn
                     text="가입완료"
-                    style={complete ? 'bluefull': 'grayfull'}
+                    style={complete ? 'full blue': 'full gray'}
                     history={this.props.history}
                     handleClick={this.handleSubmit}
                 />

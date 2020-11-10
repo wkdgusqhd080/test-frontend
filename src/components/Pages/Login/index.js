@@ -34,6 +34,13 @@ class Login extends React.Component {
 
             if(response.data.code == '200') {
               alert("환영합니다 " + response.data.message.loginUser.nick + "님");
+              window.sessionStorage.setItem('email', response.data.message.loginUser.email);
+              window.sessionStorage.setItem('nick', response.data.message.loginUser.nick);
+              window.sessionStorage.setItem('pwd', response.data.message.loginUser.pwd);
+              window.sessionStorage.setItem('phone', response.data.message.loginUser.phone);
+              
+              this.props.history.push('/main');
+
             }else {
               alert(response.data.message);
             }
@@ -89,6 +96,7 @@ class Login extends React.Component {
                       <CustomInput
                           type="checkbox"
                           style="logincheck"
+                          setJoinInfo={this.setJoinInfo}
                        />
                     </li>
                     

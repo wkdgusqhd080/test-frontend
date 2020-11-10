@@ -67,7 +67,7 @@ body{
 	background-color:#226bef;
 }
 
-.btn.grayfull {
+.btn.full {
     text-decoration:none;
     border-radius:5px;
     border:none;
@@ -75,29 +75,23 @@ body{
     height:42px;
     font-size: 14px;
     text-align:center;
-    line-height: 44px;
+    line-height: 30px;
     margin-left:-4px;
     margin-top:160px;
     font-family:Noto Sans KR;
     cursor:pointer;
 }
 
-.btn.bluefull {
+.full.gray {
+    background-color: gray;
+    color:white;
+}
+
+.full.blue {
     background-color:#226bef;
     color:white;
-    text-decoration:none;
-    border-radius:5px;
-    border:none;
-    width:365px;
-    height:42px;
-    font-size: 14px;
-    text-align:center;
-    line-height: 44px;
-    margin-left:-4px;
-    margin-top:160px;
-    font-family:Noto Sans KR;
-    cursor:pointer;
 }
+
 
 .login-form-interval1 {margin-bottom:12px;}
 
@@ -206,4 +200,33 @@ body{
       width:320px;
       height:44px;
       color:#767676;
+  }
+
+  /* Mypage */
+
+  .loginState{
+      text-align:center;
+  }
+
+  .input.mypage {
+    margin-left:34px;
+  }
+
+  /* Main */
+
+  .mainPageContainer {
+    width: 366px;
+    height: 1135px;
+    background-color: #f5f5f5;
+  }
+
+  .bannerImg {
+      width:364px;
+      height:180px;
+  }
+
+  .whiteBg {
+      width:366px;
+      height:323px;
+      margin-top:20px;
   }
